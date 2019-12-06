@@ -62,5 +62,6 @@ public class Bill implements TakeAwayBill {
         if (totPrice < 10) {
             totPrice += 0.5;
         }
+        return totPrice;   
     }
 }
