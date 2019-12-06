@@ -1,0 +1,16 @@
+dist: trusty
+
+group: edge
+
+language: java
+
+sudo: required
+
+jdk: openjdk8
+  
+cache:
+  directories:
+  - $C:\Users\mrkro\.m2
+
+script:
+  - mvn clean install
