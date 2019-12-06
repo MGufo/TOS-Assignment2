@@ -16,4 +16,5 @@ cache:
   - $C:\Users\mrkro\.m2
 
 script:
+  - cd sandwich-shop-manager
   - mvn clean install
