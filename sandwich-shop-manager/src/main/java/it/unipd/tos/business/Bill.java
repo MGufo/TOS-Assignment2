@@ -17,5 +17,10 @@ public class Bill implements TakeAwayBill {
         }
         double totPrice = 0;
         
+
+        //Sconto se costo panini + fritti > 50
+        if(totPrice > 50) {
+            totPrice -= totPrice*0.1;
+        }
     }
 }
