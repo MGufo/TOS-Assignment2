@@ -22,5 +22,10 @@ public class Bill implements TakeAwayBill {
         if(totPrice > 50) {
             totPrice -= totPrice*0.1;
         }
+        
+        //Sovrapprezzo per ordini < 10€
+        if(totPrice < 10) {
+            totPrice += 0.5;
+        }
     }
 }
